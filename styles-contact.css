@@ -1,0 +1,327 @@
+/*This is my SSB Contact Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+	font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+	flex-wrap: wrap;
+    transition: .2s linear;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my SSB Contact Web Page Project ------------ */
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url("images/velocity-img-3bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header{
+	width:90%;
+	background-color: rgb(10, 10, 10, 0.8);	
+	border-radius: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
+	display:flex;
+	align-items:center;
+
+	position: fixed;
+	padding-left: 20px;
+
+}
+
+.header .logoContent{
+	display:flex;
+	align-items:center;
+	height:10%;
+}
+
+.header .logoContent .logo img{
+	height:4rem;
+}
+
+.header .logoContent .logoName {
+	color: #fff;
+	font-size: 2rem;
+	margin-right: 70px;
+}
+
+.logoImg{
+	width: 60px;
+	display: flex;
+	margin-right: 1.5rem;
+
+}
+
+.header .navbar a{
+	margin-right: 3rem;
+	margin-left: 3rem;
+	font-size: 2rem;	
+	color: #fff;
+	font-weight:bold;
+}
+
+
+nav li{
+	padding:5px;
+	border-right: 2px solid #fff;
+	display: inline;
+	float: left;
+	color: #fff;
+}
+
+nav li:last-child{
+	border-right: none;
+}
+
+.header .navbar a:hover{
+	border-bottom: .1rem solid #FFF;
+	padding-bottom: .4rem;
+}
+
+#menu-bar{
+	display: none;
+}
+
+@media only screen and (max-width: 900px) {
+	.header .navbar a{
+		display: inline-block;
+		margin:0;
+		padding:0;
+	}
+	.header{
+		width:70%;
+	
+	}
+	.header .navbar li{
+		display:flex;
+		justify-content:center;
+		padding:5px;
+	}
+	.header .navbar li:first-child{
+		padding-left:0px;
+	}
+	.home{
+		padding-top: 90px;
+	}
+	.navbar{
+		margin-top:10px;
+	}
+}
+/* end of header */
+
+.heading{
+	font-size: 27px;
+	color: #fff;
+}
+
+.home{
+	min-height: 100vh;
+}
+
+.homeImg{
+	background: rgb(10, 10, 10, 0.8);
+	width: 500px;
+	border-radius: 20px;
+	margin-top: 20px;
+	padding:8px;
+}
+
+.homeContent{
+	display: flex;
+	padding-top: 140px;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.homeText {
+	margin-left: 20px;
+	width: 700px;
+	height: 100%;
+	padding: 20px;
+	text-align: center;
+	background: rgb(10, 10, 10, 0.8);
+	border-radius: 10px;
+	color: #fff;
+	font-size: 27px;
+}
+
+.homeHeader {
+	padding-bottom: 30px;
+	font-size: 33px;
+}
+
+
+
+/* end of home section */
+
+.tickets {
+	margin-bottom:80px;
+}
+
+.tickets .heading{
+	display:flex;
+	padding:10px;
+	justify-content: center;
+	background: rgb(10, 10, 10, 0.8);
+	width: 250px;
+	margin: auto;
+	margin-bottom:20px;
+	border-radius: 10px;
+}
+
+.ticketOptions {
+	color: #fff;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+
+.ticketOptions h4{
+	margin: auto;
+	width: 20%x;
+	height: auto;
+	margin-top:10px;
+	text-align: center;
+	border-bottom: 1px double #fff;
+}
+
+.ticketChoice {
+	display: flex;
+	margin:20px auto;
+	background: rgb(10,10,10,0.8);
+	border-radius: 10px;
+	width: 23%;
+	min-width: 300px;
+}
+
+.ticketChoice p{
+	padding:18px;
+
+}
+
+.ticketChoice ul{
+	padding:18px;
+	padding-top: 3px;
+}
+
+.ticketButton{
+	display: flex;
+	text-align: center;
+	margin: 0px auto;
+	padding: 14px;
+	justify-content: center;
+	align-content: end;
+	background: rgb(250,250,250,0.8);
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.ticketButton a{
+	color: #000;
+}
+
+.ticketImg {
+	width:100%;
+	margin-top:10px;
+}
+
+/* end of ticket section */
+
+.dates h2{
+	display: flex;
+	justify-content: center;
+	background: rgb(10, 10, 10, 0.8);
+	padding:10px;
+	width: 250px;
+	margin: 0px auto;
+	border-radius: 10px;
+}
+
+.datesTable{
+	color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.datesTable table{
+	display: flex;
+	font-size: 18px;
+	border: 1px solid #4f4f4f;
+	background: rgb(10, 10, 10, 0.8);
+	border-radius:10px;
+	margin:20px;
+}
+
+.datesTable tr{
+	border: 1px solid #4f4f4f;
+}
+
+.datesTable td{
+	border: 1px solid #4f4f4f;
+	padding:10px;
+}
+
+.datesTable th{
+	border: 1px solid #4f4f4f;
+	border-top-right-radius: 10px;
+	padding:15px;
+}
+
+.datesTable img{
+	width:100%;
+	border-radius: 10px;
+}
+
+/* end of dates section*/
+
